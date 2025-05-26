@@ -3,6 +3,8 @@ image:
   tag: "1.0.0"
   pullPolicy: IfNotPresent
 
+fullname: fastapi-hello-helm
+
 service:
   type: ClusterIP
   port: 80

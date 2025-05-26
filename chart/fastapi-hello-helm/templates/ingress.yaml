@@ -2,7 +2,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ include "fastapi-hello-helm.fullname" . }}
+  name: fastapi-hello-helm
   annotations:
     kubernetes.io/ingress.class: {{ .Values.ingress.className }}
 spec:
