@@ -1,5 +1,5 @@
 apiVersion: v2
-name: hello-fastapi
+name: fastapi-hello-helm
 description: A simple FastAPI Hello World
 type: application
 version: 0.1.0

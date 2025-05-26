@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "hello-fastapi.fullname" . }}
-  labels: {{- include "hello-fastapi.labels" . | nindent 4 }}
+  name: {{ include "fastapi-hello-helm.fullname" . }}
+  labels: {{- include "fastapi-hello-helm.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -10,4 +10,4 @@ spec:
       targetPort: 8000
       protocol: TCP
       name: http
-  selector: {{- include "hello-fastapi.selectorLabels" . | nindent 4 }}
+  selector: {{- include "fastapi-hello-helm.selectorLabels" . | nindent 4 }}

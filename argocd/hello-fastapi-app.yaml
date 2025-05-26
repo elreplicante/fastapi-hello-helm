@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hello-fastapi
+  name: fastapi-hello-helm
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/elreplicante/fastapi-hello-helm.git
     targetRevision: main
-    path: chart/hello-fastapi
+    path: chart/fastapi-hello-helm
     helm:
       valueFiles:
         - values.yaml
