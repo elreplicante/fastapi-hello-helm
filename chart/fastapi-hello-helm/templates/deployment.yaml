@@ -24,6 +24,4 @@ spec:
             initialDelaySeconds: 5
             periodSeconds: 10
       imagePullSecrets:
-        { { - range .Values.image.pullSecrets } }
-        - name: { { . } }
-        { { - end } }
+        - name: ghcr
