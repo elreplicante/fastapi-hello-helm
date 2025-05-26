@@ -1,8 +1,7 @@
-# .github/workflows/ci.yml
 name: build-and-push
 on: [push]
 
-permissions:               # 👈 sin esto el GITHUB_TOKEN solo lee
+permissions:
   contents: read
   packages: write
 
