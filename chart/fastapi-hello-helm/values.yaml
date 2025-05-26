@@ -2,6 +2,8 @@ image:
   repository: ghcr.io/elreplicante/fastapi-hello-helm
   tag: "1.0.0"
   pullPolicy: IfNotPresent
+  pullSecrets:
+    - ghcr
 
 fullname: fastapi-hello-helm
 
